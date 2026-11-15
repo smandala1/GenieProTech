@@ -624,3 +624,17 @@
 .gp-steps li { border-color: rgba(18, 104, 251, 0.16); }
 .gp-steps li { align-items: flex-start; }
 .gp-steps li > span { flex: none; display: grid; place-items: center; width: 30px; height: 30px; padding: 0; border-radius: 50%; background: var(--blue); color: #FFFFFF; font-size: 0.75rem; }
+
+/* Hover: a blue shade on the item under the pointer (and on keyboard focus). */
+.gp-list li, .gp-caps a, .gp-steps li, .gp-aside-card li {
+  transition: background-color 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
+}
+.gp-steps li { margin: 0 -12px; padding-inline: 12px; border-radius: 12px; }
+.gp-aside-card li { margin: 0 -10px; padding-inline: 10px; border-radius: 12px; }
+@media (hover: hover) {
+  .gp-list li:hover, .gp-caps a:hover, .gp-steps li:hover, .gp-aside-card li:hover {
+    background-color: rgba(18, 104, 251, 0.12); border-color: rgba(18, 104, 251, 0.45);
+  }
+  .gp-list li:hover { box-shadow: 0 10px 22px -14px rgba(0, 45, 140, 0.45); }
+}
+.gp-list li:focus-within, .gp-caps a:focus-visible { background-color: rgba(18, 104, 251, 0.12); border-color: rgba(18, 104, 251, 0.45); }
