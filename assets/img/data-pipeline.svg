@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="900" viewBox="0 0 1100 900" fill="none">
+<defs>
+ <pattern id="dots" width="28" height="28" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1.2" fill="#1268FB" opacity=".18"/></pattern>
+ <g id="database" stroke="#1268FB" stroke-width="2.5" fill="#E8F1FF"><path d="M0 18v84c0 10 22 18 48 18s48-8 48-18V18"/><ellipse cx="48" cy="18" rx="48" ry="18"/><path d="M0 46c0 10 22 18 48 18s48-8 48-18M0 74c0 10 22 18 48 18s48-8 48-18" fill="none"/></g>
+ <g id="table" stroke="#1268FB" stroke-width="2"><rect width="144" height="108" rx="8" fill="#F3F7FF"/><path d="M0 28h144"/><path d="M0 56h144M0 82h144M46 28v80M96 28v80" opacity=".4"/><path d="M16 14h32M64 14h20M106 14h20" stroke-width="4"/></g>
+ <g id="chart" stroke="#1268FB" stroke-width="2"><rect width="160" height="120" rx="8" fill="#F3F7FF"/><path d="M24 22v74h116" opacity=".35"/><path d="M42 84V62M68 84V48M94 84V56M120 84V30" stroke-width="12" opacity=".55"/></g>
+</defs>
+<path fill="url(#dots)" d="M0 0h1100v900H0z"/>
+<g stroke="#1268FB" stroke-width="2.5" opacity=".4" stroke-linejoin="round">
+ <path d="M144 162h116v114h156M512 276h132V144h166M512 276h132v180h166M464 336v130H260v170H144M464 466v224h346M970 204h62v546h-78"/>
+</g>
+<g opacity=".8">
+ <use href="#table" x="0" y="108"/><use href="#database" x="416" y="216"/>
+ <use href="#chart" x="810" y="84"/><use href="#table" x="810" y="402"/>
+ <use href="#database" x="48" y="576"/><use href="#chart" x="810" y="630"/>
+ <use href="#table" x="392" y="690"/>
+</g>
+<g fill="#1268FB"><circle cx="260" cy="276" r="5"/><circle cx="644" cy="276" r="5"/><circle cx="464" cy="466" r="5"/><circle cx="644" cy="690" r="5"/></g>
+</svg>

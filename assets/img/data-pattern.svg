@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="900" viewBox="0 0 960 900" fill="none">
+  <defs>
+    <pattern id="grid" width="48" height="48" patternUnits="userSpaceOnUse">
+      <path d="M48 0H0V48" stroke="#1268FB" stroke-opacity=".16"/>
+      <circle cx="1" cy="1" r="1.5" fill="#1268FB" fill-opacity=".7"/>
+    </pattern>
+  </defs>
+  <path fill="url(#grid)" d="M0 0h960v900H0z"/>
+  <g stroke="#1268FB" stroke-width="2.5" stroke-opacity=".65">
+    <path d="M0 192h192l96 96h192l96-96h384"/>
+    <path d="M0 384h288l96-96M480 288v192l96 96h384"/>
+    <path d="M96 672h192l96-96V384h288l96-96h192"/>
+    <path d="M192 900V768l96-96M576 900V672l96-96V96l96-96"/>
+    <path d="M0 96h384l96 96h288l96-96h96M768 900V768l96-96h96"/>
+  </g>
+  <g fill="#F4F8FF" stroke="#1268FB" stroke-width="3">
+    <circle cx="192" cy="192" r="6"/><circle cx="480" cy="288" r="7"/>
+    <circle cx="288" cy="384" r="5"/><circle cx="384" cy="576" r="6"/>
+    <circle cx="672" cy="384" r="7"/><circle cx="672" cy="576" r="5"/>
+    <circle cx="288" cy="672" r="7"/><circle cx="768" cy="192" r="5"/>
+    <circle cx="864" cy="672" r="6"/><circle cx="576" cy="768" r="5"/>
+  </g>
+  <g fill="#1268FB" fill-opacity=".2" stroke="#1268FB" stroke-opacity=".45">
+    <rect x="432" y="72" width="96" height="48" rx="6"/>
+    <rect x="720" y="456" width="144" height="48" rx="6"/>
+    <rect x="336" y="744" width="96" height="48" rx="6"/>
+  </g>
+  <g fill="#1268FB" fill-opacity=".7">
+    <circle cx="450" cy="96" r="3"/><circle cx="462" cy="96" r="3"/>
+    <circle cx="738" cy="480" r="3"/><circle cx="750" cy="480" r="3"/>
+    <circle cx="354" cy="768" r="3"/><circle cx="366" cy="768" r="3"/>
+  </g>
+</svg>

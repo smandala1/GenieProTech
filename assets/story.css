@@ -7,6 +7,23 @@
 
 /* Backgrounds */
 .gp-bg { position: absolute; inset: 0; z-index: 0; }
+.gp-bg-data {
+  overflow: hidden;
+  background: linear-gradient(115deg, #FFFFFF 0%, #F5F9FF 48%, #C9DDFF 100%);
+}
+.gp-bg-data::before {
+  content: ""; position: absolute; inset: 0;
+  background: url("img/data-pipeline.svg?v=1") right center / auto 110% no-repeat;
+  -webkit-mask-image: linear-gradient(90deg, rgba(0, 0, 0, 0.08) 0%, rgba(0, 0, 0, 0.25) 32%, #000 56%);
+  mask-image: linear-gradient(90deg, rgba(0, 0, 0, 0.08) 0%, rgba(0, 0, 0, 0.25) 32%, #000 56%);
+}
+@media (max-width: 760px) {
+  .gp-bg-data::before {
+    background-size: auto 100%; opacity: 0.85;
+    -webkit-mask-image: linear-gradient(135deg, rgba(0, 0, 0, 0.08) 15%, #000 85%);
+    mask-image: linear-gradient(135deg, rgba(0, 0, 0, 0.08) 15%, #000 85%);
+  }
+}
 .gp-bg-photo { background-position: 50% 50%; background-size: cover; background-repeat: no-repeat; }
 .gp-bg-photo::after { content: ""; position: absolute; inset: 0; background: linear-gradient(90deg, rgba(234, 242, 255, 0.96) 0%, rgba(234, 242, 255, 0.9) 42%, rgba(234, 242, 255, 0.35) 62%, rgba(18, 104, 251, 0.06) 80%); }
 .gp-bg-photo[data-bg="3"]::after { background: linear-gradient(270deg, rgba(234, 242, 255, 0.9) 0%, rgba(234, 242, 255, 0.4) 42%, rgba(18, 104, 251, 0.08) 75%); }
