@@ -563,3 +563,19 @@
 .gp-aside-card small { display: block; margin-top: 2px; font-size: .85rem; color: var(--body); }
 .gp-aside-link { display: inline-block; margin-top: 16px; font-weight: 500; color: var(--blue-ink); text-decoration: none; }
 .gp-aside-link:hover { text-decoration: underline; }
+
+/* Frames 1-3: push the photos back so the cards lead.
+   A light brand wash over each photo, with muted color and a slight blur. The hero (data-bg 0) is unchanged. */
+.gp-bg-blend::before { filter: saturate(0.55) blur(2px); transform: scale(1.03); }
+.gp-story .gp-bg[data-bg="1"]::after,
+.gp-story .gp-bg[data-bg="2"]::after,
+.gp-story .gp-bg[data-bg="3"]::after {
+  content: ""; position: absolute; inset: 0; pointer-events: none;
+  background: linear-gradient(135deg, rgba(234, 242, 255, 0.86) 0%, rgba(214, 229, 255, 0.74) 55%, rgba(190, 214, 255, 0.66) 100%);
+}
+.gp-story .gp-bg-photo[data-bg="3"] { overflow: hidden; background-image: none !important; }
+.gp-story .gp-bg-photo[data-bg="3"]::before {
+  content: ""; position: absolute; inset: -12px; pointer-events: none;
+  background: url("img/workshop.jpg") 40% 50% / cover no-repeat;
+  filter: saturate(0.55) blur(2px);
+}
