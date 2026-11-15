@@ -584,7 +584,7 @@
 .gp-story .gp-bg[data-bg="1"]::after {
   background:
     linear-gradient(90deg, rgba(228, 238, 255, 0) 30%, rgba(228, 238, 255, 0.92) 70%),
-    url("img/data-pattern.svg") left center / auto 115% no-repeat,
+    url("img/data-wave.svg") left center / auto 120% no-repeat,
     linear-gradient(135deg, rgba(234, 242, 255, 0.86) 0%, rgba(214, 229, 255, 0.74) 55%, rgba(190, 214, 255, 0.66) 100%);
 }
 .gp-story .gp-bg[data-bg="2"]::after {
@@ -596,14 +596,14 @@
 .gp-story .gp-bg[data-bg="3"]::after {
   background:
     linear-gradient(90deg, rgba(228, 238, 255, 0) 30%, rgba(228, 238, 255, 0.92) 70%),
-    url("img/data-pattern.svg") left top / auto 125% no-repeat,
+    url("img/data-wave.svg") left bottom / auto 125% no-repeat,
     linear-gradient(135deg, rgba(234, 242, 255, 0.86) 0%, rgba(214, 229, 255, 0.74) 55%, rgba(190, 214, 255, 0.66) 100%);
 }
 @media (max-width: 760px) {
   .gp-story .gp-bg[data-bg="1"]::after, .gp-story .gp-bg[data-bg="2"]::after, .gp-story .gp-bg[data-bg="3"]::after {
     background:
       linear-gradient(180deg, rgba(228, 238, 255, 0) 10%, rgba(228, 238, 255, 0.9) 45%),
-      url("img/data-pattern.svg") center top / 140% auto no-repeat,
+      url("img/data-wave.svg") center top / 160% auto no-repeat,
       linear-gradient(135deg, rgba(234, 242, 255, 0.86) 0%, rgba(214, 229, 255, 0.74) 55%, rgba(190, 214, 255, 0.66) 100%);
   }
 }
