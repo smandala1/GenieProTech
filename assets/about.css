@@ -62,3 +62,15 @@
  .ab-data-panel { max-width: 620px; width: 100%; }
  .ab-tags { margin-top: 0; }
 }
+
+/* Closing call to action */
+.ab-cta { padding-block: clamp(64px, 8vw, 104px); }
+.ab-cta-inner { display: grid; grid-template-columns: 1fr auto; gap: clamp(32px, 6vw, 96px); align-items: end; }
+.ab-cta h2 { margin: 0; font-size: clamp(2rem, 3.2vw, 2.75rem); line-height: 1.08; letter-spacing: -.02em; color: var(--ink); }
+.ab-cta p:not(.ab-section-label) { margin: 16px 0 0; max-width: 40rem; font-size: 1.05rem; line-height: 1.65; color: var(--body); }
+.ab-cta-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 16px 28px; }
+.ab-cta-actions a:not(.btn) { font-weight: 500; }
+@media (max-width: 760px) {
+  .ab-cta-inner { grid-template-columns: 1fr; align-items: start; }
+}
+.ab-cta .btn span { margin-left: .4em; }
