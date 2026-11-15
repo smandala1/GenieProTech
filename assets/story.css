@@ -529,3 +529,37 @@
     linear-gradient(rgba(18, 104, 251, 0.18) 1px, transparent 1px) 0 0 / 28px 28px,
     linear-gradient(90deg, rgba(18, 104, 251, 0.18) 1px, transparent 1px) 0 0 / 28px 28px;
 }
+
+/* Hero v13: larger logo lockup, brand-blue name, and a capability card filling the right side. */
+.hdr-auto .gp-hero-brand { gap: 24px; font-size: 2.9rem; margin-bottom: 32px; color: var(--blue); }
+.hdr-auto .gp-hero-brand img { width: 136px; height: 136px; }
+.hdr-auto .gp-hero-brand small { font-size: 1.3rem; margin-top: 4px; color: var(--ink); }
+@media (max-width: 760px) {
+  .hdr-auto .gp-hero-brand { gap: 14px; font-size: 1.9rem; margin-bottom: 18px; }
+  .hdr-auto .gp-hero-brand img { width: 84px; height: 84px; }
+  .hdr-auto .gp-hero-brand small { font-size: 1rem; }
+}
+
+.gp-hero-aside { display: none; }
+@media (min-width: 1100px) {
+  .gp-story.is-animated .gp-hero-aside {
+    display: block; position: absolute; top: 50%; transform: translateY(-50%);
+    left: calc(100% + clamp(48px, 9vw, 180px)); width: 380px;
+  }
+}
+.gp-aside-card {
+  padding: 28px 28px 24px; border-radius: 22px; color: var(--ink);
+  background: rgba(255, 255, 255, 0.82); border: 1px solid rgba(255, 255, 255, 0.9);
+  -webkit-backdrop-filter: blur(16px) saturate(1.2); backdrop-filter: blur(16px) saturate(1.2);
+  box-shadow: 0 30px 60px -30px rgba(0, 30, 100, 0.55);
+}
+.gp-aside-k { margin: 0 0 18px; font-size: .75rem; font-weight: 600; letter-spacing: .12em; text-transform: uppercase; color: var(--blue-ink); }
+.gp-aside-card ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 4px; }
+.gp-aside-card li { display: flex; gap: 14px; align-items: center; padding: 12px 0; border-bottom: 1px solid rgba(18, 104, 251, 0.12); }
+.gp-aside-card li:last-child { border-bottom: 0; }
+.gp-aside-ic { flex: none; display: grid; place-items: center; width: 44px; height: 44px; border-radius: 12px; background: #EAF2FF; }
+.gp-aside-ic svg { width: 22px; height: 22px; fill: none; stroke: var(--blue); stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+.gp-aside-card strong { display: block; font-size: 1.02rem; font-weight: 600; }
+.gp-aside-card small { display: block; margin-top: 2px; font-size: .85rem; color: var(--body); }
+.gp-aside-link { display: inline-block; margin-top: 16px; font-weight: 500; color: var(--blue-ink); text-decoration: none; }
+.gp-aside-link:hover { text-decoration: underline; }
