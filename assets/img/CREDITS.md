@@ -3,7 +3,7 @@
 Stock photographs used illustratively, not as Geniepro team or client photographs.
 
 - collaboration.jpg: Pexels photo 3184360, https://www.pexels.com/photo/3184360/
-- data-center.jpg: Pexels photo 325229, https://www.pexels.com/photo/325229/ (home hero; cropped and color-graded blue)
+- server-rack.jpg: Pexels photo 17489157, https://www.pexels.com/photo/17489157/ (home hero)
 - data-team.jpg: Pexels photo 3182773, https://www.pexels.com/photo/3182773/ (former home hero, no longer used)
 - workshop.jpg: Pexels photo 3184292, https://www.pexels.com/photo/3184292/
 - workstation.jpg: Pexels photo 1181675, https://www.pexels.com/photo/1181675/
