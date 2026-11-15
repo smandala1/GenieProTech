@@ -699,3 +699,11 @@ body, .section:not(.on-navy), .service { background-color: var(--white); }
 .facts .directions { display: inline-block; margin-top: 6px; font-weight: 500; }
 .facts .directions span { margin-left: .25em; }
 @media (max-width: 760px) { .contact-map { height: 220px; border-radius: 12px; } }
+
+/* Contact: form card spans the full height of the left column (label to map bottom). */
+@media (min-width: 1001px) {
+  .contact-grid { align-items: stretch; }
+  .contact-grid .inquiry { display: flex; flex-direction: column; margin-top: 20px; }
+  .contact-grid .inquiry .field:has(textarea) { flex: 1; display: flex; flex-direction: column; }
+  .contact-grid .inquiry .field textarea { flex: 1; resize: none; }
+}
