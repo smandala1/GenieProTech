@@ -707,3 +707,7 @@ body, .section:not(.on-navy), .service { background-color: var(--white); }
   .contact-grid .inquiry .field:has(textarea) { flex: 1; display: flex; flex-direction: column; }
   .contact-grid .inquiry .field textarea { flex: 1; resize: none; }
 }
+
+/* Footer: deep navy so it separates clearly from blue sections above it. */
+.site-footer { background: #0B2142; border-top: 4px solid var(--blue); }
+.site-footer .footer-base { border-top-color: rgba(255, 255, 255, 0.14); }
